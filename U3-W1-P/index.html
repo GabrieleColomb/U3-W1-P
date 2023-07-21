@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ricariche telefoniche</title>
+  </head>
+  <body>
+    <div class="background-image">
+      <div class="page-wrapper">
+        <h1>Smartphone Interface</h1>
+
+        <div class="utente-buttons">
+          <button onclick="cambiaUtente(0)">Samsung Gabriele</button>
+          <button onclick="cambiaUtente(1)">iPhone Simone</button>
+          <button onclick="cambiaUtente(2)">Xiaomi Teresa</button>
+        </div>
+
+        <p id="creditoResiduo">Credito residuo: 0.00€</p>
+        <p id="numeroChiamate">Numero di chiamate effettuate: 0</p>
+        <label for="ricaricaInput">Ricarica credito (in €):</label>
+        <input type="number" id="ricaricaInput" />
+        <button onclick="ricaricaCredito()">Ricarica</button>
+        <br />
+        <br />
+        <label for="durataChiamata">Durata chiamata (in minuti):</label>
+        <input type="number" id="durataChiamata" />
+        <button onclick="effettuaChiamata()">Effettua Chiamata</button>
+        <br />
+        <br />
+        <button onclick="azzeraChiamate()">Azzera Numero Chiamate</button>
+        <div
+          id="registroChiamateContainer"
+          style="height: 150px; overflow: auto"
+        >
+          <p id="registroChiamate">Registro chiamate:</p>
+        </div>
+      </div>
+    </div>
+    <script src="typescript/script.js"></script>
+  </body>
+</html>
