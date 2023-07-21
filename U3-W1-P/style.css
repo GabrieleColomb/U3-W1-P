@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/sfondo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1; 
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #creditoResiduo {
+    font-weight: bold;
+  }
+  
+  #numeroChiamate {
+    font-weight: bold;
+    color: #0056b3;
+  }
+
+  .utente-buttons {
+    margin-top: 10px;
+  }
+  
+  .utente-buttons button {
+    background-color: #0056b3; 
+    color: white; 
+    border: none;
+    padding: 10px 17px;
+    cursor: pointer;
+  }
+  
+  .utente-buttons button.active {
+    background-color: #77dd77; 
+    color: black;
+  }
